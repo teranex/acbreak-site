@@ -1,0 +1,32 @@
+name = AC Break
+description = Installation profile for the AC Break website
+version = VERSION
+core = 7.x
+
+; Core Modules
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = toolbar
+dependencies[] = overlay
+dependencies[] = field_ui
+dependencies[] = file
+
+; Contrib Modules
+dependencies[] = features
+
+; AC Break Modules
+
+
+files[] = standard.profile
