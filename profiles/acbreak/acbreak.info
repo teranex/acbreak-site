@@ -27,6 +27,7 @@ dependencies[] = file
 dependencies[] = features
 
 ; AC Break Modules
+dependencies[] = acbreak_base
 
 
 files[] = standard.profile

@@ -1,0 +1,7 @@
+core = "7.x"
+dependencies[] = "features"
+description = "Basic funtionality"
+features[field][] = "node-page-body"
+features[node][] = "page"
+name = "ACBreak Base"
+package = "Features"

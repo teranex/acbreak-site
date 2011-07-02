@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ACBreak Base feature.
+ */
+
+include_once('acbreak_base.features.inc');
