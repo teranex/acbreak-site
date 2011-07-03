@@ -22,6 +22,7 @@ function acbreak_install() {
   _acbreak_install_run("blocks");
   _acbreak_install_run("permissions");
   _acbreak_install_run("themes");
+  _acbreak_install_run("menu");
 
   // Update the menu router information.
   menu_rebuild();
