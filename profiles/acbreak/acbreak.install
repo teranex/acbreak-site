@@ -1,6 +1,7 @@
 <?php
 
-function _acbreak_intall_run($method, $include = NULL) {
+function _acbreak_install_run($method, $include = NULL) {
+  drupal_set_message("Running install method: $method");
   if (is_null($include)) {
     $include = $method;
   }
@@ -17,10 +18,10 @@ function _acbreak_intall_run($method, $include = NULL) {
  * Perform actions to set up the site for this profile.
  */
 function acbreak_install() {
-  _acbreak_intall_run("formats");
-  _acbreak_intall_run("blocks");
-  _acbreak_intall_run("permissions");
-  _acbreak_intall_run("themes");
+  _acbreak_install_run("formats");
+  _acbreak_install_run("blocks");
+  _acbreak_install_run("permissions");
+  _acbreak_install_run("themes");
 
   // Update the menu router information.
   menu_rebuild();
