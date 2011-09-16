@@ -25,6 +25,11 @@ dependencies[] = file
 
 ; Contrib Modules
 dependencies[] = features
+dependencies[] = wysiwyg
+dependencies[] = date
+dependencies[] = calendar
+dependencies[] = link
+dependencies[] = views
 
 ; AC Break Modules
 dependencies[] = acbreak_base
