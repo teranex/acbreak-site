@@ -10,13 +10,13 @@ function acbreak_install_themes() {
   variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
 
-  // enable vanneste theme
+  // enable acbreak theme
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'marinelli')
+    ->condition('name', 'acbreak')
     ->execute();
 
   // set the site theme
-  variable_set('theme_default', 'marinelli');
+  variable_set('theme_default', 'acbreak');
 }
