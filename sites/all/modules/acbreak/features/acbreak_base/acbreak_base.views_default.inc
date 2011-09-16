@@ -67,6 +67,10 @@ function acbreak_base_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'nieuws' => 'nieuws',
   );
+  /* Filter criterion: Field: Groups audience (group_audience:gid) */
+  $handler->display->display_options['filters']['group_audience_gid']['id'] = 'group_audience_gid';
+  $handler->display->display_options['filters']['group_audience_gid']['table'] = 'field_data_group_audience';
+  $handler->display->display_options['filters']['group_audience_gid']['field'] = 'group_audience_gid';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -85,6 +89,11 @@ function acbreak_base_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'nieuws' => 'nieuws',
   );
+  /* Filter criterion: Content: Promoted to front page */
+  $handler->display->display_options['filters']['promote']['id'] = 'promote';
+  $handler->display->display_options['filters']['promote']['table'] = 'node';
+  $handler->display->display_options['filters']['promote']['field'] = 'promote';
+  $handler->display->display_options['filters']['promote']['value'] = '1';
   $handler->display->display_options['path'] = 'nieuws';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Algemeen';
@@ -127,6 +136,62 @@ function acbreak_base_views_default_views() {
   $handler->display->display_options['filters']['group_audience_gid']['table'] = 'field_data_group_audience';
   $handler->display->display_options['filters']['group_audience_gid']['field'] = 'group_audience_gid';
   $handler->display->display_options['filters']['group_audience_gid']['value']['value'] = '2';
+
+  /* Display: Page - Joggers */
+  $handler = $view->new_display('page', 'Page - Joggers', 'page_1');
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'nieuws' => 'nieuws',
+  );
+  /* Filter criterion: Field: Groups audience (group_audience:gid) */
+  $handler->display->display_options['filters']['group_audience_gid']['id'] = 'group_audience_gid';
+  $handler->display->display_options['filters']['group_audience_gid']['table'] = 'field_data_group_audience';
+  $handler->display->display_options['filters']['group_audience_gid']['field'] = 'group_audience_gid';
+  $handler->display->display_options['filters']['group_audience_gid']['value']['value'] = '2';
+  $handler->display->display_options['path'] = 'joggers';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Joggers';
+  $handler->display->display_options['menu']['weight'] = '2';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+
+  /* Display: Page - Atletiek */
+  $handler = $view->new_display('page', 'Page - Atletiek', 'page_2');
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'nieuws' => 'nieuws',
+  );
+  /* Filter criterion: Field: Groups audience (group_audience:gid) */
+  $handler->display->display_options['filters']['group_audience_gid']['id'] = 'group_audience_gid';
+  $handler->display->display_options['filters']['group_audience_gid']['table'] = 'field_data_group_audience';
+  $handler->display->display_options['filters']['group_audience_gid']['field'] = 'group_audience_gid';
+  $handler->display->display_options['filters']['group_audience_gid']['value']['value'] = '1';
+  $handler->display->display_options['path'] = 'atletiek';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Atletiek';
+  $handler->display->display_options['menu']['weight'] = '1';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
   $export['nieuws'] = $view;
 
   return $export;
