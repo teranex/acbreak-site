@@ -17,6 +17,12 @@ function acbreak_install_themes() {
     ->condition('name', 'acbreak')
     ->execute();
 
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', 'marinelli')
+    ->execute();
+
   // set the site theme
   variable_set('theme_default', 'acbreak');
 }
