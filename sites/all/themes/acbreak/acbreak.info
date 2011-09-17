@@ -60,3 +60,39 @@ settings[banner_delay] = 4000
 settings[banner_pause] = 1
 settings[banner_showtext] = 1
 settings[banner_shownavigation] = 1
+
+settings[default_banners][1][image_path]        = img/advertise/1.jpg
+settings[default_banners][1][image_title]       = Title for image 1
+settings[default_banners][1][image_description] = Description for image 1
+settings[default_banners][1][image_published]   = TRUE
+settings[default_banners][1][image_visibility]  = <front>
+
+settings[default_banners][2][image_path]        = img/advertise/2.jpg
+settings[default_banners][2][image_title]       = Title for image 2
+settings[default_banners][2][image_description] = Description for image 2
+settings[default_banners][2][image_published]   = TRUE
+settings[default_banners][2][image_visibility]  = <front>
+
+settings[default_banners][3][image_path]        = img/advertise/3.jpg
+settings[default_banners][3][image_title]       = Title for image 3
+settings[default_banners][3][image_description] = Description for image 3
+settings[default_banners][3][image_published]   = TRUE
+settings[default_banners][3][image_visibility]  = <front>
+
+settings[default_banners][4][image_path]        = img/advertise/4.jpg
+settings[default_banners][4][image_title]       = Title for image 4
+settings[default_banners][4][image_description] = Description for image 4
+settings[default_banners][4][image_published]   = TRUE
+settings[default_banners][4][image_visibility]  = <front>
+
+settings[default_banners][5][image_path]        = img/advertise/5.jpg
+settings[default_banners][5][image_title]       = Title for image 5
+settings[default_banners][5][image_description] = Description for image 5
+settings[default_banners][5][image_published]   = TRUE
+settings[default_banners][5][image_visibility]  = <front>
+
+settings[default_banners][6][image_path]        = img/advertise/6.jpg
+settings[default_banners][6][image_title]       = Title for image 6
+settings[default_banners][6][image_description] = Description for image 6
+settings[default_banners][6][image_published]   = TRUE
+settings[default_banners][6][image_visibility]  = <front>
