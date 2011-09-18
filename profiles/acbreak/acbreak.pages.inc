@@ -8,7 +8,7 @@ function acbreak_install_pages() {
     'title' => "Club",
     'body' => "todo",
     'path' => "algemeen/club",
-    'menu' => 217,
+    //'menu' => 217,
   ));
 }
 
@@ -27,11 +27,11 @@ function _acbreak_create_page($data) {
   );
   path_save($path);
 
-  $menu = array(
-    'link_path' => 'node/'.$node->nid,
-    'link_title' => $data['title'],
-    'plid' => $data['menu'],
-    'menu_name' => 'main-menu',
-  );
-  menu_link_save($menu);
+  //$menu = array(
+    //'link_path' => 'node/'.$node->nid,
+    //'link_title' => $data['title'],
+    //'plid' => $data['menu'],
+    //'menu_name' => 'main-menu',
+  //);
+  //menu_link_save($menu);
 }

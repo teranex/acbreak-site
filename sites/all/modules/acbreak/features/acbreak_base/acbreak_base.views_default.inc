@@ -97,7 +97,6 @@ function acbreak_base_views_default_views() {
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
   $handler->display->display_options['filters']['promote']['value'] = '1';
   $handler->display->display_options['path'] = 'nieuws';
-  $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Algemeen';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';
@@ -164,7 +163,6 @@ function acbreak_base_views_default_views() {
   $handler->display->display_options['filters']['group_audience_gid']['field'] = 'group_audience_gid';
   $handler->display->display_options['filters']['group_audience_gid']['value']['value'] = '2';
   $handler->display->display_options['path'] = 'joggers';
-  $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Joggers';
   $handler->display->display_options['menu']['weight'] = '2';
   $handler->display->display_options['menu']['name'] = 'main-menu';
@@ -194,7 +192,6 @@ function acbreak_base_views_default_views() {
   $handler->display->display_options['filters']['group_audience_gid']['field'] = 'group_audience_gid';
   $handler->display->display_options['filters']['group_audience_gid']['value']['value'] = '1';
   $handler->display->display_options['path'] = 'atletiek';
-  $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Atletiek';
   $handler->display->display_options['menu']['weight'] = '1';
   $handler->display->display_options['menu']['name'] = 'main-menu';
