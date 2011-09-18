@@ -25,7 +25,10 @@ function acbreak_install() {
   _acbreak_install_run("menu");
   _acbreak_install_run("settings");
   _acbreak_install_run("groups");
+  _acbreak_install_run("pages");
+
 
   // Update the menu router information.
   menu_rebuild();
+
 }
