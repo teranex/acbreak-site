@@ -1725,6 +1725,140 @@ function acbreak_base_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-wedstrijd-field_wedstrijd_soort'
+  $fields['node-wedstrijd-field_wedstrijd_soort'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_wedstrijd_soort',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'parent' => '0',
+            'vocabulary' => 'wedstrijd_soorten',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'wedstrijd',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 7,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_wedstrijd_soort',
+      'label' => 'Wedstrijd Soort',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '5',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-wedstrijd-group_audience'
+  $fields['node-wedstrijd-group_audience'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'group_audience',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'gid' => array(
+          0 => 'gid',
+        ),
+      ),
+      'module' => 'og',
+      'no_ui' => TRUE,
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'group',
+    ),
+    'field_instance' => array(
+      'bundle' => 'wedstrijd',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'og',
+          'settings' => array(),
+          'type' => 'og_list_default',
+          'weight' => 6,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'group_audience',
+      'label' => 'Group',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'og',
+        'settings' => array(
+          'autocomplete_match' => 'contains',
+          'autocomplete_path' => 'group/autocomplete',
+          'minimum_for_autocomplete' => '50',
+          'minimum_for_select_list' => '20',
+          'opt_group' => 'auto',
+          'size' => '60',
+        ),
+        'type' => 'group_audience',
+        'weight' => '4',
+      ),
+    ),
+  );
+
   // Exported field: 'taxonomy_term-locaties-field_location'
   $fields['taxonomy_term-locaties-field_location'] = array(
     'field_config' => array(
@@ -1795,6 +1929,7 @@ function acbreak_base_field_default_fields() {
   t('Datum');
   t('Foto');
   t('Functie');
+  t('Group');
   t('Group type');
   t('Groups audience');
   t('Links');
@@ -1803,6 +1938,7 @@ function acbreak_base_field_default_fields() {
   t('Plaats');
   t('Telefoon');
   t('Vertrek');
+  t('Wedstrijd Soort');
   t('image');
 
   return $fields;

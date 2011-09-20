@@ -49,9 +49,28 @@ function acbreak_base_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '0',
+    'has_children' => '1',
     'expanded' => '0',
     'weight' => '3',
+  );
+  // Exported menu link: main-menu:atletiek/wedstrijden
+  $menu_links['main-menu:atletiek/wedstrijden'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'atletiek/wedstrijden',
+    'router_path' => 'atletiek',
+    'link_title' => 'Wedstrijden',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '0',
+    'parent_path' => 'atletiek',
   );
   // Exported menu link: main-menu:joggers
   $menu_links['main-menu:joggers'] = array(
@@ -88,6 +107,7 @@ function acbreak_base_menu_default_menu_links() {
   t('Atletiek');
   t('Club');
   t('Joggers');
+  t('Wedstrijden');
   t('Wie is Wie');
 
 
