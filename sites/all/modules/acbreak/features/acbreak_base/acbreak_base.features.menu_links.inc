@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_menu_default_menu_links().
+ * Implements hook_menu_default_menu_links().
  */
 function acbreak_base_menu_default_menu_links() {
   $menu_links = array();
@@ -57,7 +57,7 @@ function acbreak_base_menu_default_menu_links() {
   $menu_links['main-menu:atletiek/wedstrijden'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'atletiek/wedstrijden',
-    'router_path' => 'atletiek',
+    'router_path' => 'atletiek/wedstrijden',
     'link_title' => 'Wedstrijden',
     'options' => array(
       'attributes' => array(

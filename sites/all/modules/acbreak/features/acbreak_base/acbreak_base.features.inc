@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_views_api().
+ * Implements hook_views_api().
  */
 function acbreak_base_views_api() {
   list($module, $api) = func_get_args();
@@ -15,10 +15,18 @@ function acbreak_base_views_api() {
 }
 
 /**
- * Implementation of hook_node_info().
+ * Implements hook_node_info().
  */
 function acbreak_base_node_info() {
   $items = array(
+    'clubrecord' => array(
+      'name' => t('Clubrecord'),
+      'base' => 'node_content',
+      'description' => t('Een record dat binnen de club werd behaald'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'evenement' => array(
       'name' => t('Evenement'),
       'base' => 'node_content',

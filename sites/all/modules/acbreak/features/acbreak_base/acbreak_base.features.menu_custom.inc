@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_menu_default_menu_custom().
+ * Implements hook_menu_default_menu_custom().
  */
 function acbreak_base_menu_default_menu_custom() {
   $menus = array();
