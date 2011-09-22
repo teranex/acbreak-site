@@ -26,9 +26,9 @@ function acbreak_base_taxonomy_default_vocabularies() {
       'weight' => '0',
     ),
     'groepen' => array(
-      'name' => 'Groepen',
+      'name' => 'Leeftijdsgroepen',
       'machine_name' => 'groepen',
-      'description' => 'Group (miniemen, start2run, ...)',
+      'description' => 'Groepen (miniemen, start2run, ...)',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
