@@ -33,5 +33,13 @@ function acbreak_base_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => '0',
     ),
+    'wedstrijd_soorten' => array(
+      'name' => 'Wedstrijd soorten',
+      'machine_name' => 'wedstrijd_soorten',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+    ),
   );
 }
