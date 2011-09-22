@@ -9,14 +9,6 @@
  */
 function acbreak_base_taxonomy_default_vocabularies() {
   return array(
-    'dagen' => array(
-      'name' => 'Dagen',
-      'machine_name' => 'dagen',
-      'description' => '',
-      'hierarchy' => '0',
-      'module' => 'taxonomy',
-      'weight' => '0',
-    ),
     'disciplines' => array(
       'name' => 'Disciplines',
       'machine_name' => 'disciplines',
@@ -37,14 +29,6 @@ function acbreak_base_taxonomy_default_vocabularies() {
       'name' => 'Groepen',
       'machine_name' => 'groepen',
       'description' => 'Group (miniemen, start2run, ...)',
-      'hierarchy' => '0',
-      'module' => 'taxonomy',
-      'weight' => '0',
-    ),
-    'locaties' => array(
-      'name' => 'Locaties',
-      'machine_name' => 'locaties',
-      'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
