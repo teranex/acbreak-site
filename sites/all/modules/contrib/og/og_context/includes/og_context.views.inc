@@ -1,5 +1,5 @@
 <?php
-// $Id: og_context.views.inc,v 1.1.2.4 2010/12/26 08:55:59 amitaibu Exp $
+
 
 /**
  * @file
