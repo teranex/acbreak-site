@@ -78,7 +78,7 @@ function acbreak_base_node_info() {
     'wedstrijd' => array(
       'name' => t('Wedstrijd'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Een wedstrijd waar de club aan zal deelnemen'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
